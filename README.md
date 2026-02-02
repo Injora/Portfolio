@@ -3,7 +3,7 @@
 Welcome to my personal portfolio!  
 This website showcases who I am, what I build, and what I’m currently exploring in tech.
 
-🚀 Live Demo: [Your Portfolio Link Here]
+🚀 Live Demo: (https://injora.github.io/Portfolie/)
 
 ---
 
