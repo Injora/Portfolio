@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Professional portfolio of a digital artisan crafting exceptional web experiences">
+    <meta name="theme-color" content="#fdfcfb">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="paper-texture"></div>
+    <div class="art-elements">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="ink-splash splash-1"></div>
+        <div class="ink-splash splash-2"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-sketch">
+                    <span class="logo-text">Portfolio</span>
+                    <div class="underline-sketch"></div>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">
+                    <span class="link-text">Home</span>
+                    <div class="link-doodle"></div>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="link-text">About</span>
+                    <div class="link-doodle"></div>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="link-text">Projects</span>
+                    <div class="link-doodle"></div>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="link-text">Skills</span>
+                    <div class="link-doodle"></div>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="link-text">Contact</span>
+                    <div class="link-doodle"></div>
+                </a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="toggle-inner">
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </div>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting-container">
+                    <p class="greeting">Hello there,</p>
+                    <div class="wave-hand">👋</div>
+                </div>
+                <div class="name-container">
+                    <span class="name-prefix">I'm</span>
+                    <h1 class="name-main">Injora</h1>
+                    <div class="name-highlight"></div>
+                </div>
+                <div class="role-container">
+                    <span class="role-label">A</span>
+                    <span class="role-main" id="roleText">Digital Artisan</span>
+                    <div class="role-sketch">
+                        <svg viewBox="0 0 100 20" class="role-underline">
+                            <path d="M5,15 Q25,5 45,12 T85,10" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    <span class="description-highlight">Crafting digital experiences</span> that feel human,
+                    look beautiful, and work flawlessly. Every pixel has a purpose,
+                    every interaction tells a story.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-text">See My Craft</span>
+                        <div class="btn-arrow">→</div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-text">Let's Talk</span>
+                    </a>
+                </div>
+                <div class="social-container">
+                    <div class="social-label">Find me on</div>
+                    <div class="social-links">
+                        <a href="https://github.com/Injora" class="social-link" data-platform="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/injora-injora-4b1554346/" class="social-link"
+                            data-platform="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/injora07" class="social-link" data-platform="twitter">
+                            <i class="fab fa-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-artwork">
+                    <div class="profile-frame">
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                        <div class="profile-image-container">
+                            <img src="assets/pfp.jpeg"
+                                alt="Profile" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-star star-1">✦</div>
+                        <div class="deco-star star-2">✧</div>
+                        <div class="deco-star star-3">✦</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-invitation">
+            <div class="scroll-text">Explore my world</div>
+            <div class="scroll-arrow">
+                <div class="arrow-line"></div>
+                <div class="arrow-head"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">01</div>
+                <h2 class="section-title">
+                    <span class="title-word">About</span>
+                    <span class="title-word">Me</span>
+                    <div class="title-sketch">
+                        <svg viewBox="0 0 200 50" class="title-underline">
+                            <path d="M10,25 Q50,10 90,20 T170,15" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                </h2>
+                <p class="section-subtitle">The story behind the craft</p>
+            </div>
+            <div class="about-content">
+                <div class="about-story">
+                    <div class="story-card fade-in">
+                        <div class="card-number">🎨</div>
+                        <h3>Creative Journey</h3>
+                        <p>Started with a crayon and paper, now I craft digital experiences.
+                            My journey from traditional art to digital design shaped my unique
+                            perspective on user experience and visual storytelling.</p>
+                    </div>
+                    <div class="story-card fade-in">
+                        <div class="card-number">💻</div>
+                        <h3>Technical Craft</h3>
+                        <p>Code is my medium, design is my language. I believe in writing
+                            clean, maintainable code that brings beautiful designs to life
+                            with smooth interactions and seamless user experiences.</p>
+                    </div>
+                    <div class="story-card fade-in">
+                        <div class="card-number">🚀</div>
+                        <h3>Future Vision</h3>
+                        <p>Always learning, always creating. I'm passionate about emerging
+                            technologies and how they can enhance human connection through
+                            thoughtful design and innovative solutions.</p>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <div class="skills-notebook">
+                        <div class="notebook-header">
+                            <div class="notebook-rings">
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                            </div>
+                            <h4>My Toolkit</h4>
+                        </div>
+                        <div class="skills-pages">
+                            <div class="skills-page">
+                                <div class="page-title">Frontend Magic</div>
+                                <div class="skill-items">
+                                    <div class="skill-item"><span>React & Next.js</span></div>
+                                    <div class="skill-item"><span>Tailwind CSS</span></div>
+                                </div>
+                            </div>
+                            <div class="skills-page">
+                                <div class="page-title">Design Tools</div>
+                                <div class="skill-items">
+                                    <div class="skill-item"><span>Figma & Adobe XD</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">02</div>
+                <h2 class="section-title">
+                    <span class="title-word">My</span>
+                    <span class="title-word">Projects</span>
+                    <div class="title-sketch">
+                        <svg viewBox="0 0 200 50" class="title-underline">
+                            <path d="M15,30 Q60,15 105,25 T185,20" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                </h2>
+                <p class="section-subtitle">Crafted with passion and precision</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/valentines.png" alt="Valentines">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Injora/Valentines" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://valentines-mu-nine.vercel.app/" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Valentines Website</h3>
+                        <p class="project-description">
+                            Interactive Valentine’s page with cute animations, floating hearts, and playful buttons —
+                            complete with a celebratory “YAY 💖” page and joyful music.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><span>HTML</span></span>
+                            <span class="tech-tag"><span>CSS</span></span>
+                            <span class="tech-tag"><span>JS</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/calc.png" alt="Calculator">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Injora/Calculator" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://js-calculator-jet-seven.vercel.app/" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Calculator App</h3>
+                        <p class="project-description">
+                            Collaborative task management with real-time updates, drag-and-drop interface,
+                            A responsive web-based calculator built using HTML, CSS Grid, and JavaScript. Includes
+                            keyboard-style button interactions, sound feedback on clicks, and a modern dark UI.
+                        </p>
+                        <div class="project-tech">
+                              <span class="tech-tag"><span>HTML</span></span>
+                            <span class="tech-tag"><span>CSS</span></span>
+                            <span class="tech-tag"><span>JS</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/anime-reco.png" alt="anime-reco">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Injora/Anime_reco_snw" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://animerecosnw.vercel.app/" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Anime Recommendation Website</h3>
+                        <p class="project-description">
+                            A personal project assignment on the topic "Anime Recommendations" using pure HTML and CSS
+                        </p>
+                        <div class="project-tech">
+                           <span class="tech-tag"><span>HTML</span></span>
+                            <span class="tech-tag"><span>CSS</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/rps.png" alt="rps">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/kartikktripathi/Fate-of-Three" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://kartikktripathi.github.io/Fate-of-Three/" class="project-link" title="App Store">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fate of three
+                        </h3>
+                        <p class="project-description">
+                            A stylish and interactive Rock–Paper–Scissors game against the computer featuring animated
+                            buttons, score tracking, background music, sound effects, and confetti celebrations!
+                            Designed using HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project-tech">
+                           <span class="tech-tag"><span>HTML</span></span>
+                            <span class="tech-tag"><span>CSS</span></span>
+                            <span class="tech-tag"><span>JS</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">03</div>
+                <h2 class="section-title">
+                    <span class="title-word">Technical</span>
+                    <span class="title-word">Skills</span>
+                    <div class="title-sketch">
+                        <svg viewBox="0 0 200 50" class="title-underline">
+                            <path d="M10,25 Q50,10 90,20 T170,15" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                </h2>
+                <p class="section-subtitle">Technologies I love working with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="92%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="83%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">04</div>
+                <h2 class="section-title">
+                    <span class="title-word">Get In</span>
+                    <span class="title-word">Touch</span>
+                    <div class="title-sketch">
+                        <svg viewBox="0 0 200 50" class="title-underline">
+                            <path d="M20,35 Q70,15 120,25 T190,20" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                </h2>
+                <p class="section-subtitle">Let's collaborate on something amazing</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>injoraman@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9955699971</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Porwal Rd, Lohegaon Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-arrow">→</div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>2026 Injora. Crafted by Injora for College. </p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Injora" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/injora-injora-4b1554346/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/injora07" class="social-link" title="Twitter"><i class="fab fa-x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
